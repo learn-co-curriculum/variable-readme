@@ -1,3 +1,13 @@
+---
+tags: readme
+language: ruby
+resources: 0
+track: web development
+topic: ruby
+unit: variables
+lesson: what is a variable?, creating, assignment
+---
+
 # Variables
 
 ## Introduction
