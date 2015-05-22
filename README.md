@@ -8,9 +8,7 @@ unit: variables
 lesson: what is a variable?, creating, assignment
 ---
 
-# Variables
-
-## Video
+## About Variables
 
 <video controls width="100%">
   <source src="http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4" type="video/mp4" >
@@ -75,6 +73,6 @@ puts "starts with a lower case variable."
 
 ## Resources
 
-[ZetCode Ruby Variables](http://zetcode.com/lang/rubytutorial/variables/)
-[Wikibooks: Ruby Programming/Syntax/Variables and Constants](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
+- [ZetCode Ruby Variables](http://zetcode.com/lang/rubytutorial/variables/)
+- [Wikibooks: Ruby Programming/Syntax/Variables and Constants](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
 
