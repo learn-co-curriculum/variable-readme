@@ -12,4 +12,4 @@ puts example
 puts example
 
 puts "variables are any previously undefined word that"
-puts "starts with a lower case variable."
+puts "starts with a lowercase letter."
