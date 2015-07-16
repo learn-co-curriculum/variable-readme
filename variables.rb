@@ -1,6 +1,6 @@
 'This is data, it is a string. Strings start with " "'
 
-"Part of being data, or a string, is that ruby doesn't interpet it."
+"Part of being data, or a string, is that ruby doesn't interpret it."
 
 puts 1+1
 puts "1+1"
