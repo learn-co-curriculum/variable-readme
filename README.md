@@ -14,11 +14,11 @@
 
 ## Introduction
 
-Much like in math, variables are words or characters that hold values. However in algebra, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
+Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
 ## Creation
 
-Variables are assigned values using `=` ("equal sign") called the assignment operator. Variable names are typically all lower case, and in the case of multiple words, the words are separated by underscores. 
+Variables are assigned values using `=` ("equal sign"), called the assignment operator. Variable names are typically all lower case and, in the case of multiple words, the words are separated by underscores. 
 
 ```ruby
 current_president = "Barack Obama"
@@ -47,7 +47,7 @@ Now, it being the year 2016, the president is Stephen Colbert.
 
 ## Variable Example
 
-Within this repository is a file `variables.rb` with some examples you can read and play with.
+Within this repository is a file named `variables.rb` with some examples you can read and play with.
 
 ```ruby
 'This is data, it is a string. Strings start with " "'
