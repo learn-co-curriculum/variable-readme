@@ -26,6 +26,7 @@ puts "In 2014, the president was #{current_president}."
 ```
 The code above will print `In 2014, the president was Barack Obama.`.
 
+> Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later - but think of it as `"In 2014, the president was" + current_president` where you are adding that value to a string.
 
 ## Reassignment
 
@@ -83,4 +84,5 @@ starts with a lowercase letter.
 
 - [ZetCode Ruby Variables](http://zetcode.com/lang/rubytutorial/variables/)
 - [Wikibooks: Ruby Programming/Syntax/Variables and Constants](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
+- [RubyMonk on Interpolation of Variables in Strings](https://rubymonk.com/learning/books/1-ruby-primer/chapters/5-strings/lessons/31-string-basics)
 
