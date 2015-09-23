@@ -1,10 +1,12 @@
+### Introduction to Variables
+
 ##Objectives
 
 1. Define a variable.
 2. Create and reassign variables.
 3. Define pass-by-value as it relates to variables
 
-## About Variables
+## Video
 
 <video controls width="100%">
   <source src="http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4" type="video/mp4" >
@@ -13,11 +15,11 @@
 
 [MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
-## Introduction
+## Variables in Ruby
 
 Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
-## Creation
+## Creating Variables 
 
 Variables are assigned values using `=` ("equal sign"), called the assignment operator. Variable names are typically all lower case and, in the case of multiple words, the words are separated by underscores. 
 
@@ -29,7 +31,7 @@ The code above will print `In 2014, the president was Barack Obama.`.
 
 > Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later - but think of it as `"In 2014, the president was" + current_president` where you are adding that value to a string.
 
-## Reassignment
+## Reassigning Variables
 
 Now the variable `current_president` is equal to the string Barack Obama. Let's say somehow Stephen Colbert got elected as president for 2016. To update `current_president`, you would just reassign the variable much in the same way that you first defined it:
 
