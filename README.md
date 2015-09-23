@@ -2,6 +2,7 @@
 
 1. Define a variable.
 2. Create and reassign variables.
+3. Define pass-by-value as it relates to variables
 
 ## About Variables
 
