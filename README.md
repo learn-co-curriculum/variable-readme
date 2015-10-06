@@ -48,7 +48,7 @@ Now, it being the year 2016, the president is Stephen Colbert.
 
 ## Variable Example
 
-Within this repository is a file named `variables.rb` with some examples you can read and play with.
+Within this repository is a file named `variables.rb` with some examples you can read and play with. [Download the Source Files](https://github.com/learn-co-curriculum/variable-readme/archive/1.0.0.zip) for this lesson or copy this code into IRB to see how it behaves.
 
 ```ruby
 'This is data, it is a string. Strings start with " "'
