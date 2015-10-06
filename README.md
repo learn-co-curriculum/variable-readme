@@ -8,20 +8,17 @@
 
 ## Video
 
-<video controls width="100%">
-  <source src="http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4" type="video/mp4" >
-    The video accompanying this lab is best enjoyed on Learn.co
-</video>
+<iframe width="960" height="720" src="https://www.youtube.com/embed/FsVYkcOoI8Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-[MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
+[Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
 ## Variables in Ruby
 
 Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
-## Creating Variables 
+## Creating Variables
 
-Variables are assigned values using `=` ("equal sign"), called the assignment operator. Variable names are typically all lower case and, in the case of multiple words, the words are separated by underscores. 
+Variables are assigned values using `=` ("equal sign"), called the assignment operator. Variable names are typically all lower case and, in the case of multiple words, the words are separated by underscores.
 
 ```ruby
 current_president = "Barack Obama"
@@ -88,4 +85,3 @@ starts with a lowercase letter.
 - [ZetCode Ruby Variables](http://zetcode.com/lang/rubytutorial/variables/)
 - [Wikibooks: Ruby Programming/Syntax/Variables and Constants](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
 - [RubyMonk on Interpolation of Variables in Strings](https://rubymonk.com/learning/books/1-ruby-primer/chapters/5-strings/lessons/31-string-basics)
-
