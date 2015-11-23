@@ -70,7 +70,7 @@ puts "starts with a lowercase letter."
 
 Running this file will print:
 
-```bash
+```
 2
 1+1
 The word 'example' is equal to this sentence, it's a named variable.
