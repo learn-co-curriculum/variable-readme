@@ -86,4 +86,4 @@ starts with a lowercase letter.
 - [Wikibooks: Ruby Programming/Syntax/Variables and Constants](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
 - [RubyMonk on Interpolation of Variables in Strings](https://rubymonk.com/learning/books/1-ruby-primer/chapters/5-strings/lessons/31-string-basics)
 
-<a href='https://learn.co/lessons/variable-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/variable-readme' title='Introduction to Variables'>Introduction to Variables</a> on Learn.co and start learning to code for free.</p>
