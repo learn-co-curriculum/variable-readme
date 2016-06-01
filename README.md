@@ -27,9 +27,9 @@ The code above will print '21'.
 
 ```ruby
 current_president = "Barack Obama"
-puts "In 2015, the president was #{current_president}."
+puts "In 2016, the president was #{current_president}."
 ```
-This code will print `In 2015, the president was Barack Obama.`.
+This code will print `In 2016, the president was Barack Obama.`.
 
 > Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- but think of it as `"In 2014, the president was" + current_president` where you are adding that value to a string.
 
