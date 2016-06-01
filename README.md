@@ -52,7 +52,7 @@ FIRST_NAME
 age
 longest_word
 ```
-These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case* `this_is_an_example_of_snake_case` -- words are seperated by underscores.  This is opposed to *camel case*
+These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case* `this_is_an_example_of_snake_case` words are seperated by underscores.  This is opposed to *camel case*
 `thisIsAnExampleOfCamelCase` where upcased characters indicate word breaks.
 
 Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a **constant** and has some different behavior.
@@ -70,11 +70,15 @@ A Ruby variable cannot start with a number, be a Ruby reserved word, or have pun
 
 #### A Variable has a Value
 
-A variable's name is like a label on a container. It's value is what is stored inside that container. The name points to the value. Above, `current_president` holds onto the value "Barack Obama" and `num_one` has the value of the number 7. As we will see, the value of a variable can change even when it's name stays the same.
+A variable's name is like a label on a container. Its value is what is stored inside that container. The name points to the value. Above, `current_president` holds onto the value "Barack Obama" and `first_number` has the value of the number 7. As we will see, the value of a variable can change even when its name stays the same.
 
 #### A Variable has a Type
 
-A variable's type is the type of the value it holds. Ruby is what is known as a *dynamically typed* language. That means the value of a variable can change it's type and does not need to be explicitly and permanently defined. There is nothing stopping you from changing the value of `sum`, which now is the number 21, to the string "whatever I want". When you are building larger programs it is important to have in mind the type of the value that a variable refers to.
+A variable's type is the type of the value it holds. Ruby is what is known as a *dynamically typed* language. That means the value of a variable can change its type and does not need to be explicitly and permanently defined. There is nothing stopping you from changing the value of `sum`, which now is the number 21, to the string "whatever I want". 
+
+It is also a *strongly typed* language. This means a variable will never be automatically *coerced* to another type without you explicitly changing the type. Adding two numbers will return a number, 2 + 2 returns 4; adding two strings will return a string, "2" + "2" returns "22"; adding a number and a string will raise an error, 2 + "2" raises a `TypeError`.
+
+When you are building larger programs it is important to have in mind the type of the value that a variable refers to.
 
 ## Creating Variables
 
@@ -87,20 +91,20 @@ puts "In 2015, the president was #{current_president}."
 
 ## Reassigning Variables
 
-Now the variable `current_president` is equal to the string Barack Obama. Let's say somehow Stephen Colbert got elected as president for 2016. To update `current_president`, you would just reassign the variable much in the same way that you first defined it:
+Now the variable `current_president` is equal to the string Barack Obama. Let's say somehow Stephen Colbert got elected as president in the 2016 election. To update `current_president`, you would just reassign the variable much in the same way that you first defined it:
 
 ```ruby
 current_president = "Barack Obama"
 puts "In 2015, the president was #{current_president}."
 
 current_president = "Stephen Colbert"
-puts "Now, it being the year 2016, the president is #{current_president}."
+puts "Now, it being the year 2017, the president is #{current_president}."
 ```
 This will print out:  
 
 ```
 In 2015, the president was Barack Obama.
-Now, it being the year 2016, the president is Stephen Colbert.
+Now, it being the year 2017, the president is Stephen Colbert.
 ```
 
 ## Variable Example
@@ -145,14 +149,14 @@ We have seen that the variable itself, the location where information is stored,
 # Open up IRB and follow along
 sound = "squeek"
 
-# We can peek at the value of sound by typing it's name
+# We can peek at the value of sound by typing its name
 sound
 # => "squeek"
 
 sound.upcase
 # => "SQUEEK"
 ```
-Ok, the moment of suspense has arrived! Now if we type `sound` again what do you think it's value will be?
+Ok, the moment of suspense has arrived! Now if we type `sound` again what do you think its value will be?
 
 ...
 
@@ -163,7 +167,7 @@ sound
 # => "squeek"
 ```
 
-Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did it's thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
+Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did its thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
 
 Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEEK'.
 
