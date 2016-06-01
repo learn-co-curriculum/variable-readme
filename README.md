@@ -31,7 +31,7 @@ puts "In 2016, the president was #{current_president}."
 ```
 This code will print `In 2016, the president was Barack Obama.`.
 
-> Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- but think of it as `"In 2014, the president was" + current_president` where you are adding that value to a string.
+> Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- but think of it as `"In 2016, the president was" + current_president` where you are adding that value to a string.
 
 `first_number`, `second_number`, `sum`, and `current_president` are all **variables**.  Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
@@ -86,7 +86,7 @@ Variables are assigned values using `=` ("equal sign"), called the assignment op
 
 ```ruby
 current_president = "Barack Obama"
-puts "In 2015, the president was #{current_president}."
+puts "In 2016, the president was #{current_president}."
 ```
 
 ## Reassigning Variables
@@ -95,7 +95,7 @@ Now the variable `current_president` is equal to the string Barack Obama. Let's 
 
 ```ruby
 current_president = "Barack Obama"
-puts "In 2015, the president was #{current_president}."
+puts "In 2016, the president was #{current_president}."
 
 current_president = "Stephen Colbert"
 puts "Now, it being the year 2017, the president is #{current_president}."
@@ -103,7 +103,7 @@ puts "Now, it being the year 2017, the president is #{current_president}."
 This will print out:  
 
 ```
-In 2015, the president was Barack Obama.
+In 2016, the president was Barack Obama.
 Now, it being the year 2017, the president is Stephen Colbert.
 ```
 
