@@ -33,11 +33,11 @@ This code will print `In 2015, the president was Barack Obama.`.
 
 > Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- but think of it as `"In 2014, the president was" + current_president` where you are adding that value to a string.
 
-`num_one`, `num_two`, `sum`, and `current_president` are all **variables**.  Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
+`first_number`, `second_number`, `sum`, and `current_president` are all **variables**.  Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
 ## What is a Variable
 
-As the examples above show, variables allow us to store information. We tell our computer to set aside some space to hold that information so we can retrieve that information later. It is the location where the information resides, when we need the information we know just where to look.
+As the examples above show, variables allow us to store information. We tell our computer to set aside some space to hold that information so we can retrieve it later. A variable is the location where the information resides, when we need it we know just where to look.
 
 #### A Variable has a Name
 
@@ -52,7 +52,10 @@ FIRST_NAME
 age
 longest_word
 ```
-These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case*, multiple_word_names_should_be_seperated_by_an_underscore.  This is opposed to *camel case* whereUpcasedCharactersAreUsedToIndicateWordBreaks. Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a Constant and has some different behavior.
+These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case* `this_is_an_example_of_snake_case` -- words are seperated by underscores.  This is opposed to *camel case*
+`thisIsAnExampleOfCamelCase` where upcased characters indicate word breaks.
+
+Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a **constant** and has some different behavior.
 
 There are also some rules that mark invalid variable names:
 
@@ -164,7 +167,7 @@ Hmmm... `sound` is still pointing to the original lowercased value. What does th
 
 Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEEK'.
 
-This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete it would be holding a new and different value.
+This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete the variable would be holding a new and different value.
 
 ## Resources
 
