@@ -1,6 +1,6 @@
 # Introduction to Variables
 
-##Objectives
+## Objectives
 
 1. Define a variable.
 2. Create and reassign variables.
@@ -13,20 +13,74 @@
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
 ## Variables in Ruby
+Let's dive right in:
 
-Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
+```ruby
+first_number = 7
+second_number = 14
 
-## Creating Variables
+sum = first_number + second_number
 
-Variables are assigned values using `=` ("equal sign"), called the assignment operator. Variable names are typically all lower case and, in the case of multiple words, the words are separated by underscores.
+puts sum
+```
+The code above will print '21'.
 
 ```ruby
 current_president = "Barack Obama"
-puts "In 2014, the president was #{current_president}."
+puts "In 2015, the president was #{current_president}."
 ```
-The code above will print `In 2014, the president was Barack Obama.`.
+This code will print `In 2015, the president was Barack Obama.`.
 
 > Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- but think of it as `"In 2014, the president was" + current_president` where you are adding that value to a string.
+
+`num_one`, `num_two`, `sum`, and `current_president` are all **variables**.  Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
+
+## What is a Variable
+
+As the examples above show, variables allow us to store information. We tell our computer to set aside some space to hold that information so we can retrieve that information later. It is the location where the information resides, when we need the information we know just where to look.
+
+#### A Variable has a Name
+
+```ruby
+i
+result
+user1
+brkfstCereal
+all_words_in_the_dictionary
+CountryOfOrigin
+FIRST_NAME
+age
+longest_word
+```
+These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case*, multiple_word_names_should_be_seperated_by_an_underscore.  This is opposed to *camel case* whereUpcasedCharactersAreUsedToIndicateWordBreaks. Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a Constant and has some different behavior.
+
+There are also some rules that mark invalid variable names:
+
+```ruby
+# X Invalid X
+1st_place
+end
+danny's_age   
+```
+
+A Ruby variable cannot start with a number, be a Ruby reserved word, or have punctuation or space characters.
+
+#### A Variable has a Value
+
+A variable's name is like a label on a container. It's value is what is stored inside that container. The name points to the value. Above, `current_president` holds onto the value "Barack Obama" and `num_one` has the value of the number 7. As we will see, the value of a variable can change even when it's name stays the same.
+
+#### A Variable has a Type
+
+A variable's type is the type of the value it holds. Ruby is what is known as a *dynamically typed* language. That means the value of a variable can change it's type and does not need to be explicitly and permanently defined. There is nothing stopping you from changing the value of `sum`, which now is the number 21, to the string "whatever I want". When you are building larger programs it is important to have in mind the type of the value that a variable refers to.
+
+## Creating Variables
+
+Variables are assigned values using `=` ("equal sign"), called the assignment operator.
+
+```ruby
+current_president = "Barack Obama"
+puts "In 2015, the president was #{current_president}."
+```
 
 ## Reassigning Variables
 
@@ -34,7 +88,7 @@ Now the variable `current_president` is equal to the string Barack Obama. Let's 
 
 ```ruby
 current_president = "Barack Obama"
-puts "In 2014, the president was #{current_president}."
+puts "In 2015, the president was #{current_president}."
 
 current_president = "Stephen Colbert"
 puts "Now, it being the year 2016, the president is #{current_president}."
@@ -42,7 +96,7 @@ puts "Now, it being the year 2016, the president is #{current_president}."
 This will print out:  
 
 ```
-In 2014, the president was Barack Obama.
+In 2015, the president was Barack Obama.
 Now, it being the year 2016, the president is Stephen Colbert.
 ```
 
@@ -79,6 +133,38 @@ The word 'example' is equal to this sentence, it's a named variable.
 variables are any previously undefined word that
 starts with a lowercase letter.
 ```
+
+## Bonus: 'Pass-By-Value'
+
+We have seen that the variable itself, the location where information is stored, is distinct from the value stored at that location. Let's try something out to demonstrate this. We'll first declare a new variable with an original value, then do something to change that value, and finally we'll take a peek at our variable again.
+
+```ruby
+# Open up IRB and follow along
+sound = "squeek"
+
+# We can peek at the value of sound by typing it's name
+sound
+# => "squeek"
+
+sound.upcase
+# => "SQUEEK"
+```
+Ok, the moment of suspense has arrived! Now if we type `sound` again what do you think it's value will be?
+
+...
+
+...
+
+```ruby
+sound
+# => "squeek"
+```
+
+Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did it's thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
+
+Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEEK'.
+
+This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete it would be holding a new and different value.
 
 ## Resources
 
