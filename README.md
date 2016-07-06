@@ -112,20 +112,20 @@ Now, it being the year 2017, the president is Stephen Colbert.
 Within this repository is a file named `variables.rb` with some examples you can read and play with. [Download the Source Files](https://github.com/learn-co-curriculum/variable-readme/archive/1.0.0.zip) for this lesson to see how it behaves.
 
 ```ruby
-'This is data, it is a string. Strings start and end with  " '
+"This is data; it is a string. Strings start and end with quotation marks."
 
-"Part of being data, or a string, is that ruby doesn't interpret it."
+"Part of being data, such as a string, is that Ruby doesn't interpret it."
 
 puts 1+1
 puts "1+1"
 
-example = "The word 'example' is equal to this sentence, it's a named variable."
+example = "The word 'example' is equal to this sentence; it's a named variable."
 
 puts example
 puts example
 puts example
 
-puts "variables are any previously undefined word that"
+puts "Variables are any previously undefined word that"
 puts "starts with a lowercase letter."
 ```
 
@@ -134,10 +134,10 @@ Running this file will print:
 ```
 2
 1+1
-The word 'example' is equal to this sentence, it's a named variable.
-The word 'example' is equal to this sentence, it's a named variable.
-The word 'example' is equal to this sentence, it's a named variable.
-variables are any previously undefined word that
+The word 'example' is equal to this sentence; it's a named variable.
+The word 'example' is equal to this sentence; it's a named variable.
+The word 'example' is equal to this sentence; it's a named variable.
+Variables are any previously undefined word that
 starts with a lowercase letter.
 ```
 
@@ -147,14 +147,14 @@ We have seen that the variable itself, the location where information is stored,
 
 ```ruby
 # Open up IRB and follow along
-sound = "squeek"
+sound = "squeak"
 
 # We can peek at the value of sound by typing its name
 sound
-# => "squeek"
+# => "squeak"
 
 sound.upcase
-# => "SQUEEK"
+# => "SQUEAK"
 ```
 Ok, the moment of suspense has arrived! Now if we type `sound` again what do you think its value will be?
 
@@ -164,14 +164,14 @@ Ok, the moment of suspense has arrived! Now if we type `sound` again what do you
 
 ```ruby
 sound
-# => "squeek"
+# => "squeak"
 ```
 
 Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did its thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
 
-Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEEK'.
+Only its *value*. In fact, it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen, the value 'squeak' wouldn't exist for us to look up, and we'd only be able to see 'SQUEAK'.
 
-This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete the variable would be holding a new and different value.
+This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. There, changes to a variable would alter what is stored in the actual location it refers to. When the process completed, the variable would be holding a new and different value.
 
 ## Resources
 
