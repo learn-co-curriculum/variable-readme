@@ -147,14 +147,14 @@ We have seen that the variable itself, the location where information is stored,
 
 ```ruby
 # Open up IRB and follow along
-sound = "squeek"
+sound = "squeak"
 
 # We can peek at the value of sound by typing its name
 sound
-# => "squeek"
+# => "squeak"
 
 sound.upcase
-# => "SQUEEK"
+# => "SQUEAK"
 ```
 Ok, the moment of suspense has arrived! Now if we type `sound` again what do you think its value will be?
 
@@ -164,12 +164,12 @@ Ok, the moment of suspense has arrived! Now if we type `sound` again what do you
 
 ```ruby
 sound
-# => "squeek"
+# => "squeak"
 ```
 
 Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did its thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
 
-Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEEK'.
+Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEAK'.
 
 This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete the variable would be holding a new and different value.
 
@@ -180,3 +180,5 @@ This is what we mean by pass-by-value. A variable makes a copy of the value it h
 - [RubyMonk on Interpolation of Variables in Strings](https://rubymonk.com/learning/books/1-ruby-primer/chapters/5-strings/lessons/31-string-basics)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/variable-readme' title='Introduction to Variables'>Introduction to Variables</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/variable-readme'>About Variable Assignment</a> on Learn.co and start learning to code for free.</p>
