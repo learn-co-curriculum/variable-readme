@@ -177,8 +177,5 @@ This is what we mean by pass-by-value. A variable makes a copy of the value it h
 
 - [ZetCode Ruby Variables](http://zetcode.com/lang/rubytutorial/variables/)
 - [Wikibooks: Ruby Programming/Syntax/Variables and Constants](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Variables_and_Constants)
-- [RubyMonk on Interpolation of Variables in Strings](https://rubymonk.com/learning/books/1-ruby-primer/chapters/5-strings/lessons/31-string-basics)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/variable-readme' title='Introduction to Variables'>Introduction to Variables</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/variable-readme'>About Variable Assignment</a> on Learn.co and start learning to code for free.</p>
