@@ -169,7 +169,7 @@ sound
 
 Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did its thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
 
-Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeek' wouldn't exist for us to look up and we'd only be able to see 'SQUEAK'.
+Only it's *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeak' wouldn't exist for us to look up and we'd only be able to see 'SQUEAK'.
 
 This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete the variable would be holding a new and different value.
 
