@@ -31,7 +31,7 @@ puts "In 2016, the president was #{current_president}."
 ```
 This code will print `In 2016, the president was Barack Obama.`.
 
-> Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- but think of it as `"In 2016, the president was" + current_president` where you are adding that value to a string.
+> Note: The syntax of `#{current_president}` simply injects the value of the variable `current_president` into the string. This is called [Interpolation](http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby) and we'll cover it later -- in this case, you can think of it as `"In 2016, the president was " + current_president + "."` where you are simply adding together multiple strings.
 
 `first_number`, `second_number`, `sum`, and `current_president` are all **variables**.  Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
