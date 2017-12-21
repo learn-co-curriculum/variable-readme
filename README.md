@@ -14,6 +14,8 @@
 
 This video is meant as optional supplemental material to augment the written curriculum. If you feel you already understand variables, you are welcome to skip the video and continue forward. Feel free to come back here if you ever want a review.
 
+If you would like to code along you can use: [repl.it](https://repl.it/).
+
 ## Variables in Ruby
 Let's dive right in:
 
