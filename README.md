@@ -59,7 +59,7 @@ longest_word
 These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case* `this_is_an_example_of_snake_case` words are separated by underscores.  This is opposed to *camel case*
 `thisIsAnExampleOfCamelCase` where upcased characters indicate word breaks.
 
-Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a **constant** and has some different behavior.
+Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a **constant** and has different characteristics.
 
 There are also some rules that mark invalid variable names:
 
