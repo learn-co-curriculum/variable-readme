@@ -1,7 +1,7 @@
 tags: 
-  -readme
-language: 
-  -ruby
+  - readme
+languages:
+  - ruby
 resources: 0
 track: web development
 topic: ruby
