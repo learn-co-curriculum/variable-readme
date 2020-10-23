@@ -8,7 +8,7 @@
 
 ## Video
 
-![video on variables](https://www.youtube.com/embed/FsVYkcOoI8Y?rel=0&amp;showinfo=0)
+[![Variables Video](http://img.youtube.com/vi/FsVYkcOoI8Y/0.jpg)](http://www.youtube.com/watch?v=FsVYkcOoI8Y "Variables Video")
 
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
