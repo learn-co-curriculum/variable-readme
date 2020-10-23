@@ -8,7 +8,8 @@
 
 ## Video
 
-<iframe width="960" height="720" src="https://www.youtube.com/embed/FsVYkcOoI8Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+![video on variables](https://www.youtube.com/embed/FsVYkcOoI8Y?rel=0&amp;showinfo=0)
+<!-- <iframe width="960" height="720" src="" frameborder="0" allowfullscreen></iframe> -->
 
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
@@ -17,6 +18,7 @@ This video is meant as optional supplemental material to augment the written cur
 If you would like to code along you can use: [repl.it](https://repl.it/).
 
 ## Variables in Ruby
+
 Let's dive right in:
 
 ```ruby
