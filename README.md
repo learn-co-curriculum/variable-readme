@@ -8,10 +8,7 @@
 
 ## Video
 
-<figure class="video_container">
-  <iframe src="http://www.youtube.com/watch?v=FsVYkcOoI8Y" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
+<iframe width="960" height="720" src="https://www.youtube.com/embed/FsVYkcOoI8Y?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
 This video is meant as optional supplemental material to augment the written curriculum. If you feel you already understand variables, you are welcome to skip the video and continue forward. Feel free to come back here if you ever want a review.
