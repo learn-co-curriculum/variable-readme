@@ -8,7 +8,9 @@
 
 ## Video
 
-[![Variables Video](http://img.youtube.com/vi/FsVYkcOoI8Y/0.jpg)](http://www.youtube.com/watch?v=FsVYkcOoI8Y "Variables Video")
+<figure class="video_container">
+  <iframe src="http://www.youtube.com/watch?v=FsVYkcOoI8Y" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
