@@ -8,7 +8,7 @@
 
 ## Video
 
-<iframe width="960" height="720" src="http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="960" height="720" src="https://youtu.be/ieYmBf67u7A" frameborder="0" allowfullscreen></iframe>
 
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
