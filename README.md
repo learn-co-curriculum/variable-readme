@@ -8,7 +8,10 @@
 
 ## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ieYmBf67u7A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video width="560" height="315" controls>
+  <source src="http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 [Download MP4](http://learn-co-videos.s3.amazonaws.com/ruby/about-variables-ruby.mp4)
 
@@ -28,29 +31,38 @@ sum = first_number + second_number
 
 puts sum
 ```
+
 The code above will print '21'.
 
 ```ruby
-current_president = "Barack Obama"
-puts "In 2016, the president was #{current_president}."
+best_cheese = "cheddar"
+puts "The best cheese is obviously #{best_cheese}."
 ```
-This code will print `In 2016, the president was Barack Obama.`.
 
-> **Note:** The syntax of `#{current_president}` simply injects the value of the
-> variable `current_president` into the string. This is called [Interpolation][]
-> and we'll cover it later -- in this case, you can think of it as `"In 2016,
-> the president was " + current_president + "."` where you are simply adding
-> together multiple strings.
+This code will print `The best cheese is obviously cheddar.`.
 
-[Interpolation]: http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby
+> **Note:** The syntax of `#{best_cheese}` simply injects the value of the
+> variable `best_cheese` into the string. This is called [Interpolation][] and
+> we'll cover it later — in this case, you can think of it as
+> `"The best cheese is obviously " + best_cheese + "."` where you are simply
+> adding together multiple strings.
 
-`first_number`, `second_number`, `sum`, and `current_president` are all **variables**.  Much like in math, variables are words or characters that hold values. In algebra, however, variables are only placeholders for numbers. In Ruby, a variable can point to almost any type of value including numbers, strings, arrays, and hashes.
+[interpolation]: http://stackoverflow.com/questions/10076579/string-concatenation-vs-interpolation-in-ruby
+
+`first_number`, `second_number`, `sum`, and `best_cheese` are all **variables**.
+Much like in math, variables are words or characters that hold values. In
+algebra, however, variables are only placeholders for numbers. In Ruby, a
+variable can point to almost any type of value including numbers, strings,
+arrays, and hashes.
 
 ## What is a Variable
 
-As the examples above show, variables allow us to store information. We tell our computer to set aside some space to hold that information so we can retrieve it later. A variable is the location where the information resides, when we need it we know just where to look.
+As the examples above show, variables allow us to store information. We tell our
+computer to set aside some space to hold that information so we can retrieve it
+later. A variable is the location where the information resides, when we need it
+we know just where to look.
 
-#### A Variable has a Name
+### A Variable has a Name
 
 ```ruby
 i
@@ -63,10 +75,16 @@ FIRST_NAME
 age
 longest_word
 ```
-These would all be valid variable names in Ruby. They would not all be good variable names. There is strong convention among Rubyists to use what is known as *snake case* `this_is_an_example_of_snake_case` words are separated by underscores.  This is opposed to *camel case*
-`thisIsAnExampleOfCamelCase` where upcased characters indicate word breaks.
 
-Variable names should start with a lowercase letter. A variable that begins with an uppercase letter is known as a **constant** and has different characteristics.
+These would all be valid variable names in Ruby. They would not all be good
+variable names. There is strong convention among Rubyists to use what is known
+as _snake case_ `this_is_an_example_of_snake_case` words are separated by
+underscores. This is opposed to _camel case_ `thisIsAnExampleOfCamelCase` where
+`upcase`d characters indicate word breaks.
+
+Variable names should start with a lowercase letter. A variable that begins with
+an uppercase letter is known as a **constant** and has different
+characteristics.
 
 There are also some rules that mark invalid variable names:
 
@@ -74,53 +92,75 @@ There are also some rules that mark invalid variable names:
 # X Invalid X
 1st_place
 end
-danny's_age   
+danny's_age
 ```
 
-A Ruby variable cannot start with a number, be a Ruby reserved word, or have punctuation or space characters.
+A Ruby variable cannot start with a number, be a Ruby reserved word, or have
+punctuation or space characters.
 
-#### A Variable has a Value
+### A Variable has a Value
 
-A variable's name is like a label on a container. Its value is what is stored inside that container. The name points to the value. Above, `current_president` holds onto the value "Barack Obama" and `first_number` has the value of the number 7. As we will see, the value of a variable can change even when its name stays the same.
+A variable's name is like a label on a container. Its value is what is stored
+inside that container. The name points to the value. Above, `best_cheese` holds
+onto the value "Barack Obama" and `first_number` has the value of the number 7.
+As we will see, the value of a variable can change even when its name stays the
+same.
 
 #### A Variable has a Type
 
-A variable's type is the type of the value it holds. Ruby is what is known as a *dynamically typed* language. That means the value of a variable can change its type and does not need to be explicitly and permanently defined. There is nothing stopping you from changing the value of `sum`, which now is the number 21, to the string "whatever I want". 
+A variable's type is the type of the value it holds. Ruby is what is known as a
+_dynamically typed_ language. That means the value of a variable can change its
+type and does not need to be explicitly and permanently defined. There is
+nothing stopping you from changing the value of `sum`, which now is the number
+21, to the string "whatever I want".
 
-It is also a *strongly typed* language. This means a variable will never be automatically *coerced* to another type without you explicitly changing the type. Adding two numbers will return a number, 2 + 2 returns 4; adding two strings will return a string, "2" + "2" returns "22"; adding a number and a string will raise an error, 2 + "2" raises a `TypeError`.
+It is also a _strongly typed_ language. This means a variable will never be
+automatically _coerced_ to another type without you explicitly changing the
+type. Adding two numbers will return a number, 2 + 2 returns 4; adding two
+strings will return a string, "2" + "2" returns "22"; adding a number and a
+string will raise an error, 2 + "2" raises a `TypeError`.
 
-When you are building larger programs it is important to have in mind the type of the value that a variable refers to.
+When you are building larger programs it is important to have in mind the type
+of the value that a variable refers to.
 
 ## Creating Variables
 
-Variables are assigned values using `=` ("equal sign"), called the assignment operator.
+Variables are assigned values using `=` ("equal sign"), called the assignment
+operator.
 
 ```ruby
-current_president = "Barack Obama"
-puts "In 2016, the president was #{current_president}."
+best_cheese = "cheddar"
+puts "The best cheese is obviously #{best_cheese}."
 ```
 
 ## Reassigning Variables
 
-Now the variable `current_president` is equal to the string Barack Obama. Let's say somehow Stephen Colbert got elected as president in the 2016 election. To update `current_president`, you would just reassign the variable much in the same way that you first defined it:
+Now the variable `best_cheese` is equal to the string "cheddar". Let's say
+somehow we were brainwashed into thinking Swiss cheese was better than cheddar.
+To update `best_cheese`, you would just reassign the variable much in the
+same way that you first defined it:
 
 ```ruby
-current_president = "Barack Obama"
-puts "In 2016, the president was #{current_president}."
+best_cheese = "cheddar"
+puts "The best cheese is obviously #{best_cheese}."
 
-current_president = "Stephen Colbert"
-puts "Now, it being the year 2017, the president is #{current_president}."
+best_cheese = "Swiss"
+puts "I've come to my senses and realized the best cheese is #{best_cheese}."
 ```
-This will print out:  
 
-```
-In 2016, the president was Barack Obama.
-Now, it being the year 2017, the president is Stephen Colbert.
+This will print out:
+
+```txt
+The best cheese is obviously cheddar.
+I've come to my senses and realized the best cheese is Swiss.
 ```
 
 ## Variable Example
 
-Within this repository is a file named `variables.rb` with some examples you can read and play with. [Download the Source Files](https://github.com/learn-co-curriculum/variable-readme/archive/1.0.0.zip) for this lesson to see how it behaves.
+Within this repository is a file named `variables.rb` with some examples you can
+read and play with.
+[Fork the repository](https://github.com/learn-co-curriculum/variable-readme)
+for this lesson to see how it behaves.
 
 ```ruby
 'This is data, it is a string. Strings start and end with  " '
@@ -142,7 +182,7 @@ puts "starts with a lowercase letter."
 
 Running this file will print:
 
-```
+```txt
 2
 1+1
 The word 'example' is equal to this sentence, it's a named variable.
@@ -154,7 +194,11 @@ starts with a lowercase letter.
 
 ## Bonus: 'Pass-By-Value'
 
-We have seen that the variable itself, the location where information is stored, is distinct from the value stored at that location. Let's try something out to demonstrate this. We'll first declare a new variable with an original value, then do something to change that value, and finally we'll take a peek at our variable again.
+We have seen that the variable itself, the location where information is stored,
+is distinct from the value stored at that location. Let's try something out to
+demonstrate this. We'll first declare a new variable with an original value,
+then do something to change that value, and finally we'll take a peek at our
+variable again.
 
 ```ruby
 # Open up IRB and follow along
@@ -167,7 +211,9 @@ sound
 sound.upcase
 # => "SQUEAK"
 ```
-Ok, the moment of suspense has arrived! Now if we type `sound` again what do you think its value will be?
+
+Ok, the moment of suspense has arrived! Now if we type `sound` again what do you
+think its value will be?
 
 ...
 
@@ -178,11 +224,20 @@ sound
 # => "squeak"
 ```
 
-Hmmm... `sound` is still pointing to the original lowercased value. What does this tell us? When `upcase` did its thing to the variable, what MUST `sound` have handed over to `upcase` for us to see this result?
+Hmmm... `sound` is still pointing to the original lowercased value. What does
+this tell us? When `upcase` did its thing to the variable, what MUST `sound`
+have handed over to `upcase` for us to see this result?
 
-Only its *value*. In fact it must have made a *copy of that value* that `upcase` could operate on while still holding onto the original unaltered value. If this process did not happen the value 'squeak' wouldn't exist for us to look up and we'd only be able to see 'SQUEAK'.
+Only its _value_. In fact it must have made a _copy of that value_ that `upcase`
+could operate on while still holding onto the original unaltered value. If this
+process did not happen the value 'squeak' wouldn't exist for us to look up and
+we'd only be able to see 'SQUEAK'.
 
-This is what we mean by pass-by-value. A variable makes a copy of the value it holds and passes the copy over to something else that alters or changes it. The alternative process is known as pass-by-reference. Here, changes to a variable would alter what is stored in the actual location it refers to. After the process was complete the variable would be holding a new and different value.
+This is what we mean by pass-by-value. A variable makes a copy of the value it
+holds and passes the copy over to something else that alters or changes it. The
+alternative process is known as pass-by-reference. Here, changes to a variable
+would alter what is stored in the actual location it refers to. After the
+process was complete the variable would be holding a new and different value.
 
 ## Resources
 
